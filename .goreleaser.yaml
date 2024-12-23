@@ -23,7 +23,7 @@ archives:
       {{- else }}{{ .Arch }}{{ end }}
       {{- if .Arm }}v{{ .Arm }}{{ end }}
 brews:
-  - name: gohexwordlist
+  - name: "{{ .ProjectName }}"
     directory: Formula
     repository:
       owner: cuotos
